@@ -21,4 +21,6 @@ while True:
         break
 for j in gerenciamento:
     print(f'O jogador {j["nome"]} teve um total de {j["tot_gols"]} gols e jogou {len(j["gols"])} partidas')
+
+# Após conhecer a biblioteca tabulate, achei adequado utilizá-la nesse código para uma melhor visualização dos dados
 print(tabulate(gerenciamento, headers='keys', showindex=True, tablefmt='fancy_grid'))
