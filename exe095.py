@@ -24,3 +24,4 @@ for j in gerenciamento:
 
 # Após conhecer a biblioteca tabulate, achei adequado utilizá-la nesse código para uma melhor visualização dos dados
 print(tabulate(gerenciamento, headers='keys', showindex=True, tablefmt='fancy_grid'))
+
