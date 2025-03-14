@@ -1,6 +1,6 @@
 # Aprimore o desafio 93 para que ele funcione com vários jogadores,
 # incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
-
+from tabulate import tabulate
 jogador = dict()
 gerenciamento = list()
 gols = list()
@@ -21,3 +21,4 @@ while True:
         break
 for j in gerenciamento:
     print(f'O jogador {j["nome"]} teve um total de {j["tot_gols"]} gols e jogou {len(j["gols"])} partidas')
+print(tabulate(gerenciamento, headers='keys', showindex=True, tablefmt='fancy_grid'))
